@@ -1,15 +1,12 @@
-body {
-  background-color: green;
-}
-
-li {
+[data-description] {
+  background-color: gray;
   font-size: 24px;
 }
 
-.page-header {
-  background-color: orange;
+[target][href] {
+  color: green;
 }
 
-#best {
-  border: 2px solid red;
+[type='text'] {
+  background-color: orange;
 }
