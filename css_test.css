@@ -1,0 +1,86 @@
+li {
+  margin-bottom: 16px;
+}
+
+[target='_blank'] {
+  border: 2px solid black;
+}
+
+a[href^='broken'] {
+  border: 2px solid red;
+}
+
+a[href$='.com'] {
+  margin-left: 50px;
+}
+
+a[lang*='en'] {
+  font-size: 10px;
+}
+
+a[href*='www'] {
+  color: green;
+}
+
+a[title~='popular'],
+a[title~='super-popular'] {
+  font-size: 24px;
+}
+
+li {
+  margin-bottom: 16px;
+}
+
+ol span {
+  background-color: green;
+  color: white;
+}
+
+ul span {
+  background-color: orange;
+  color: white;
+}
+
+#special + li > span {
+  border: 3px solid red;
+}
+
+#special ~ li {
+  margin-left: 16px;
+}
+
+a {
+  color: white;
+  background-color: black;
+}
+
+a:visited {
+  color: green;
+  background-color: orange;
+}
+
+a:active,
+.some-button:active {
+  border: 3px solid red;
+}
+
+a:hover {
+  font-size: 24px;
+}
+
+.some-button:disabled {
+  border: 2px dashed grey;
+}
+
+.some-button:hover:enabled {
+  background-color: grey;
+  color: white;
+}
+
+.search:focus {
+  background-color: orange;
+}
+
+.confirm-checkbox:checked {
+  margin-left: 20px;
+}
