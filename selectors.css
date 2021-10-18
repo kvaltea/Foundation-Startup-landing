@@ -1,4 +1,9 @@
 a {
+  color: white;
+  background-color: black;
+}
+
+a:visited {
   color: green;
   background-color: orange;
 }
@@ -25,6 +30,6 @@ a:hover {
   background-color: orange;
 }
 
-.confirm-checkbox {
+.confirm-checkbox:checked {
   margin-left: 20px;
 }
