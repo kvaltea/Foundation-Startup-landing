@@ -1,30 +1,20 @@
-/* первая буква */
-.theory::first-letter {
-  font-size: 36px;
-  margin-left: 16px;
-  color: orange;
+label > input {
+  text-transform: uppercase;
 }
 
-/* первая строка */
-.theory::first-line {
-  font-size: 24px;
+input:checked {
+  margin-left: 50px;
 }
 
-/* выделение */
-.theory::selection {
-  background-color: red;
-  color: white;
-}
-
-/* перед тем или иным значением */
-a::before {
-  /* указывает, что мы вставляем */
-  content: '>';
+#special::first-letter {
   color: green;
+  font-size: 100px;
 }
 
-/* после того или иного значением */
-a::after {
-  content: '<';
-  color: green;
+h1:hover {
+  color: blue;
+}
+
+a:visited {
+  color: grey;
 }
