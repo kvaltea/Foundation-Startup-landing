@@ -25,6 +25,6 @@ a::before {
 
 /* после того или иного значением */
 a::after {
-  content: ' <';
+  content: '<';
   color: green;
 }
