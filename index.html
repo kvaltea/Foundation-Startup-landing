@@ -9,7 +9,32 @@
       integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .theory::first-letter {
+        font-size: 36px;
+        margin-left: 16px;
+        color: orange;
+      }
+
+      .theory::first-line {
+        font-size: 24px;
+      }
+
+      .theory::selection {
+        background-color: red;
+        color: white;
+      }
+
+      a::before {
+        content: '> ';
+        color: green;
+      }
+
+      a::after {
+        content: ' <';
+        color: green;
+      }
+    </style>
   </head>
 
   <body>
