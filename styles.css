@@ -1,29 +1,23 @@
-/* первая буква */
 .theory::first-letter {
   font-size: 36px;
   margin-left: 16px;
   color: orange;
 }
 
-/* первая строка */
 .theory::first-line {
   font-size: 24px;
 }
 
-/* выделение */
 .theory::selection {
   background-color: red;
   color: white;
 }
 
-/* перед тем или иным значением */
 a::before {
-  /* указывает, что мы вставляем */
   content: '> ';
   color: green;
 }
 
-/* после того или иного значением */
 a::after {
   content: ' <';
   color: green;
