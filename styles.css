@@ -1,20 +1,51 @@
-label {
-  text-transform: uppercase;
+body {
+  background-color: #bdc3c7;
 }
 
-input:checked {
-  margin-left: 50px;
+h1 {
+  color: #9b59b6;
 }
 
-#special::first-letter {
-  color: green;
-  font-size: 100px;
+h2 {
+  color: orange;
 }
 
-h1:hover {
+li {
   color: blue;
 }
 
-a:visited {
-  color: grey;
+p {
+  background-color: yellow;
+}
+
+input {
+  border: 3px solid red;
+}
+
+.hello {
+  background-color: white;
+}
+
+#special {
+  border: 2px solid blue;
+}
+
+div > p {
+  font-size: 25px;
+}
+
+input[type='text'] {
+  background-color: grey;
+}
+
+div:nth-of-type(3) > p {
+  background-color: yellow;
+}
+
+div:nth-of-type(2) > p {
+  border: 5px solid white;
+}
+
+div:nth-of-type(3) > p > em {
+  font-size: 20px;
 }
