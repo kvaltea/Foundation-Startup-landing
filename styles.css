@@ -2,37 +2,27 @@
   box-sizing: border-box;
 }
 
-.block_red {
-  background-color: red;
-  height: 200px;
-  width: 20%;
-  display: inline-block;
-}
-
-.block_green {
-  background-color: green;
-  height: 200px;
-  width: 20%;
-  float: right;
-}
-
-.block_blue {
-  background-color: blue;
-  height: 200px;
-  width: 20%;
-  float: right;
-}
-
-.block_yellow {
+.header {
+  height: 50px;
   background-color: yellow;
-  height: 200px;
-  width: 20%;
-  float: right;
 }
 
-.block_black {
-  background-color: black;
-  height: 200px;
+.footer {
+  height: 50px;
+  background-color: green;
+  clear: both;
+}
+
+.content {
+  width: 80%;
+  background-color: pink;
+  height: 500px;
+  float: left;
+}
+
+.sidebar {
   width: 20%;
+  background-color: grey;
+  height: 500px;
   float: right;
 }
