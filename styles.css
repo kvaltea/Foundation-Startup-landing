@@ -2,22 +2,37 @@
   box-sizing: border-box;
 }
 
-.container {
+.block_red {
+  background-color: red;
+  height: 200px;
+  width: 20%;
   display: inline-block;
-  float: left;
-  width: 50%;
 }
 
-.red {
-  background-color: red;
+.block_green {
+  background-color: green;
+  height: 200px;
+  width: 20%;
   float: right;
 }
 
-.green {
-  background-color: green;
-  float: left;
+.block_blue {
+  background-color: blue;
+  height: 200px;
+  width: 20%;
+  float: right;
 }
 
-.footer {
-  clear: both;
+.block_yellow {
+  background-color: yellow;
+  height: 200px;
+  width: 20%;
+  float: right;
+}
+
+.block_black {
+  background-color: black;
+  height: 200px;
+  width: 20%;
+  float: right;
 }
