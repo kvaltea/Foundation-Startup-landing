@@ -12,30 +12,16 @@
   z-index: 1;
 }
 
+.nav-list {
+  height: 40px;
+  margin-top: 0;
+}
+
 .nav-item {
-  display: inline-block;
+  color: white;
   margin-left: 16px;
-}
-
-.nav-item:nth-child(1) {
-  color: white;
-  height: 40px;
-  line-height: 0.5;
-  position: absolute;
-}
-
-.nav-item:nth-child(2) {
-  color: white;
-  height: 40px;
-  line-height: 0.5;
-  position: absolute;
-}
-
-.nav-item:nth-child(3) {
-  color: white;
-  height: 40px;
-  line-height: 0.5;
-  position: absolute;
+  display: inline-block;
+  line-height: 2.5;
 }
 
 .content {
