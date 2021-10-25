@@ -8,36 +8,82 @@
   width: 100%;
   position: absolute;
   top: 0;
+  left: 0;
+  z-index: 1;
 }
 
-.navigation > .nav-list {
+.navigation {
   height: 40px;
   line-height: 0.5;
-  position: absolute;
 }
 
-.nav-list > .nav-item {
-  display: inline-block;
+.nav-item:nth-child(1) {
   color: white;
   margin-left: 16px;
+  display: inline-block;
+}
+
+.nav-item:nth-child(2) {
+  color: white;
+  margin-left: 16px;
+  display: inline-block;
+}
+
+.nav-item:nth-child(3) {
+  color: white;
+  margin-left: 16px;
+  display: inline-block;
 }
 
 .content {
   background-color: beige;
   height: 5000px;
-  position: static;
   width: 100%;
+  padding-top: 50px;
 }
 
 .head {
   height: 200px;
   width: 200px;
   background-color: aquamarine;
-  position: fixed;
+  position: relative;
+  left: calc(40%);
+  top: calc(5%);
 }
 
 .ear {
   width: 40px;
   height: 60px;
   background-color: brown;
+}
+
+.ear_left {
+  bottom: 120px;
+  right: 40px;
+  position: relative;
+}
+
+.ear_right {
+  bottom: 60px;
+  left: 200px;
+  position: relative;
+}
+
+.eye {
+  height: 30px;
+  width: 30px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.eye_left {
+  position: absolute;
+  top: 80px;
+  left: 40px;
+}
+
+.eye_right {
+  position: absolute;
+  top: 80px;
+  right: 40px;
 }
