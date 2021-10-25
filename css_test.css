@@ -159,3 +159,228 @@ h1:hover {
 a:visited {
   color: grey;
 }
+
+body {
+  background-color: #bdc3c7;
+}
+
+h1 {
+  color: #9b59b6;
+}
+
+h2 {
+  color: orange;
+}
+
+li {
+  color: blue;
+}
+
+p {
+  background-color: yellow;
+}
+
+input {
+  border: 3px solid red;
+}
+
+.hello {
+  background-color: white;
+}
+
+#special {
+  border: 2px solid blue;
+}
+
+div > p {
+  font-size: 25px;
+}
+
+input[type='text'] {
+  background-color: grey;
+}
+
+body > div:nth-of-type(3) > p:nth-of-type(1) {
+  background-color: yellow;
+}
+
+body > div:nth-of-type(3) > p:nth-of-type(2) {
+  border: 5px solid white;
+}
+
+div:nth-of-type(3) > p > em {
+  font-size: 20px;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  background-color: bisque;
+  width: 500px;
+  height: 200px;
+  /* внутренний отступ */
+  padding: 20px;
+  border-top: 10px solid firebrick;
+  border-right: 20px solid chartreuse;
+  border-bottom: 10px dashed burlywood;
+  border-left: 20px dashed aqua;
+  /* внешний отступ */
+  margin: 50px 100px;
+  font-size: 24px;
+}
+
+.rectangle {
+  width: 100px;
+  height: 50px;
+  background-color: forestgreen;
+  border-radius: 16px;
+}
+
+.oval {
+  width: 100px;
+  height: 50px;
+  background-color: darkmagenta;
+  border-radius: 50%;
+}
+
+.cryg {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  border-radius: 50%;
+}
+
+.triangle {
+  width: 100px;
+  height: 100px;
+  border: 50px solid transparent;
+  border-top-color: brown;
+}
+
+.static-parent {
+  position: static;
+}
+
+.relative-parent {
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+
+.absolute-parent {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+}
+
+.fixed-parent {
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+}
+
+/* обтекание по правой стороне */
+.red {
+  background-color: red;
+  float: right;
+}
+
+/* обтекание по левой стороне */
+.green {
+  background-color: green;
+  float: left;
+}
+
+/* Медведь */
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: darkturquoise;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.navigation {
+  height: 40px;
+  line-height: 0.5;
+}
+
+.nav-item:nth-child(1) {
+  color: white;
+  margin-left: 16px;
+  display: inline-block;
+}
+
+.nav-item:nth-child(2) {
+  color: white;
+  margin-left: 16px;
+  display: inline-block;
+}
+
+.nav-item:nth-child(3) {
+  color: white;
+  margin-left: 16px;
+  display: inline-block;
+}
+
+.content {
+  background-color: beige;
+  height: 5000px;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.head {
+  height: 200px;
+  width: 200px;
+  background-color: aquamarine;
+  position: relative;
+  left: calc(40%);
+  top: calc(5%);
+}
+
+.ear {
+  width: 40px;
+  height: 60px;
+  background-color: brown;
+}
+
+.ear_left {
+  bottom: 120px;
+  right: 40px;
+  position: relative;
+}
+
+.ear_right {
+  bottom: 60px;
+  left: 200px;
+  position: relative;
+}
+
+.eye {
+  height: 30px;
+  width: 30px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.eye_left {
+  position: absolute;
+  top: 80px;
+  left: 40px;
+}
+
+.eye_right {
+  position: absolute;
+  top: 80px;
+  right: 40px;
+}
