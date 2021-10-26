@@ -339,3 +339,34 @@ div:nth-of-type(3) > p > em {
   height: 60px;
   background-color: brown;
 }
+
+.horizontal {
+  /* помогает создавать более гибкие макеты */
+  display: flex;
+  height: 50px;
+  align-items: center;
+  /* Отвечает за выравнивание элементов по главной оси */
+  justify-content: space-around;
+}
+
+.vertical {
+  display: flex;
+  height: 200px;
+  /* меняет ось элементов */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.block {
+  height: 100px;
+  width: 100px;
+  /* будет ли сжиматся элемент или нет */
+  flex-shrink: 0;
+}
+
+.container {
+  display: flex;
+  /* если не помещается, то переносит элемент с сохранением велечины */
+  flex-wrap: wrap;
+}
