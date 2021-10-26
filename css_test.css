@@ -295,92 +295,47 @@ div:nth-of-type(3) > p > em {
 }
 
 /* Медведь */
-* {
-  box-sizing: border-box;
-}
-
 .header {
   background-color: darkturquoise;
   height: 40px;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
 }
 
-.navigation {
+.nav-list {
   height: 40px;
-  line-height: 0.5;
+  margin-top: 0;
 }
 
-.nav-item:nth-child(1) {
+.nav-item {
   color: white;
   margin-left: 16px;
+  float: left;
   display: inline-block;
-}
-
-.nav-item:nth-child(2) {
-  color: white;
-  margin-left: 16px;
-  display: inline-block;
-}
-
-.nav-item:nth-child(3) {
-  color: white;
-  margin-left: 16px;
-  display: inline-block;
+  line-height: 2.5;
 }
 
 .content {
   background-color: beige;
   height: 5000px;
   width: 100%;
-  padding-top: 50px;
+  position: absolute;
 }
 
 .head {
   height: 200px;
   width: 200px;
   background-color: aquamarine;
-  position: relative;
-  left: calc(40%);
-  top: calc(5%);
+  position: absolute;
+  left: calc(33.4%);
+  top: calc(3%);
 }
 
 .ear {
   width: 40px;
   height: 60px;
   background-color: brown;
-}
-
-.ear_left {
-  bottom: 120px;
-  right: 40px;
-  position: relative;
-}
-
-.ear_right {
-  bottom: 60px;
-  left: 200px;
-  position: relative;
-}
-
-.eye {
-  height: 30px;
-  width: 30px;
-  background-color: grey;
-  border-radius: 50%;
-}
-
-.eye_left {
-  position: absolute;
-  top: 80px;
-  left: 40px;
-}
-
-.eye_right {
-  position: absolute;
-  top: 80px;
-  right: 40px;
 }
