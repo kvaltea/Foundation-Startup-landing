@@ -8,11 +8,10 @@
   background-color: darkgreen;
   color: white;
   display: inline-block;
-  padding: 8px;
-  border-radius: 4px;
+  padding: 16px;
   opacity: 0.8;
+  font-size: 16px;
   cursor: pointer;
-  height: 34px;
 }
 
 .dropdown:hover {
@@ -22,7 +21,8 @@
 .menu-list {
   display: none;
   position: absolute;
-  top: 34px;
+  top: 50px;
+  left: 0;
   list-style-type: none;
   color: black;
   background-color: lightcyan;
