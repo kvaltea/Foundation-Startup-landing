@@ -1,27 +1,46 @@
-.articles {
-  display: flex;
+* {
+  box-sizing: border-box;
 }
 
-.articles > div {
-  height: 100px;
-  width: 150px;
-  background-color: beige;
+.dropdown {
+  position: relative;
   margin: 16px;
+  background-color: darkgreen;
+  color: white;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 4px;
+  opacity: 0.8;
+  cursor: pointer;
+  height: 34px;
 }
 
-.cropped {
-  overflow: hidden;
+.dropdown:hover {
+  opacity: 1;
 }
 
-.both-scrolls {
-  overflow: scroll;
+.menu-list {
+  display: none;
+  position: absolute;
+  top: 34px;
+  list-style-type: none;
+  color: black;
+  background-color: lightcyan;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 4px 8px 0px rgb(0, 0, 0, 0.2);
+  min-width: 120px;
+  z-index: 1;
 }
 
-.vertical-scroll {
-  overflow: auto;
+.menu-item {
+  padding: 16px;
 }
 
-.both-scrolls,
-.vertical-scroll {
-  cursor: all-scroll;
+.dropdown:hover .menu-list {
+  display: block;
+}
+
+.menu-list:hover {
+  background-color: ghostwhite;
 }
