@@ -2,45 +2,23 @@
   box-sizing: border-box;
 }
 
-.dropdown {
+.text {
   position: relative;
-  margin: 16px;
-  background-color: darkgreen;
-  color: white;
   display: inline-block;
-  padding: 16px;
-  opacity: 0.8;
-  font-size: 16px;
-  cursor: pointer;
+  margin: 16px;
+  border-bottom: 1px dotted black;
 }
 
-.dropdown:hover {
-  opacity: 1;
-}
-
-.menu-list {
+.tooltip {
   display: none;
   position: absolute;
-  top: 50px;
-  left: 0;
-  list-style-type: none;
-  color: black;
-  background-color: lightcyan;
-  padding: 0;
-  margin: 0;
-  box-shadow: 0px 4px 8px 0px rgb(0, 0, 0, 0.2);
-  min-width: 120px;
-  z-index: 1;
+  background-color: grey;
+  color: white;
+  border-radius: 4px;
+  padding: 8px;
+  bottom: -40px;
 }
 
-.menu-item {
-  padding: 16px;
-}
-
-.dropdown:hover .menu-list {
+.text:hover .tooltip {
   display: block;
-}
-
-.menu-list:hover {
-  background-color: ghostwhite;
 }
