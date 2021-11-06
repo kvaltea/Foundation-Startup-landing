@@ -384,4 +384,16 @@ div:nth-of-type(3) > p > em {
 .random_class {
   /* убирает видимость объекта */
   display: none;
+  /* задаёт стиль текста */
+  font-weight: 900;
+  /* интервал между буквами */
+  letter-spacing: 3px;
+  /* интервал между словами */
+  word-spacing: 5px;
+  /* не переходит на новую строку */
+  white-space: nowrap;
+  /* то что не помещаеться, заменяться на точки */
+  text-overflow: ellipsis;
+  /* высота строки */
+  line-height: 12px;
 }

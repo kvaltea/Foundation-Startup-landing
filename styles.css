@@ -3,37 +3,24 @@
 }
 
 html {
-  font-family: Roboto, sans-serif;
-  font-size: 18px;
-}
-
-section {
-  margin: 32px;
+  font-family: Verdana, sans-serif;
 }
 
 h1 {
-  word-spacing: 20px;
+  font-size: 74px;
+  text-align: center;
+  width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: auto;
+}
+
+div {
+  height: 200px;
+  background-color: coral;
+  color: white;
   text-transform: uppercase;
   text-align: center;
-}
-
-p {
-  line-height: 28px;
-}
-
-.technology {
-  font-weight: 900;
-  letter-spacing: 3px;
-  font-size: 24px;
-  opacity: 80%;
-  text-decoration: underline;
-}
-
-a {
-  text-decoration: none;
-}
-
-em {
-  color: grey;
-  font-weight: normal;
+  line-height: 200px;
 }
