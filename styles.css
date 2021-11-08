@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-.icons {
+.icon {
   margin: 100px;
   height: 100px;
   width: 100px;
@@ -10,6 +10,6 @@
   background-position-x: -200px;
 }
 
-.icons:hover {
+.icon:hover {
   background-position-y: -100px;
 }
