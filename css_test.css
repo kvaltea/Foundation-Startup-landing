@@ -398,4 +398,6 @@ div:nth-of-type(3) > p > em {
   line-height: 12px;
   /* убирает маркеры в списке */
   list-style-type: none;
+  /* выравнивает картинку на фоне */
+  background-position: center;
 }
