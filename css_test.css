@@ -402,4 +402,8 @@ div:nth-of-type(3) > p > em {
   background-position: center;
   /* линейный градиент (градус, от цвета, к цвету) */
   background-image: linear-gradient(45deg, yellow, red);
+  /* делвет текст прозрачным */
+  -webkit-text-fill-color: transparent;
+  /* накладывает градиент на текст */
+  -webkit-background-clip: text;
 }
