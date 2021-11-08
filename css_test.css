@@ -406,4 +406,6 @@ div:nth-of-type(3) > p > em {
   -webkit-text-fill-color: transparent;
   /* накладывает градиент на текст */
   -webkit-background-clip: text;
+  /* картинка без повторений */
+  background-repeat: no-repeat;
 }
