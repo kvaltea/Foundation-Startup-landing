@@ -1,6 +1,29 @@
-.main-video {
-  margin: 100px auto;
+* {
+  box-sizing: border-box;
+}
+
+.image {
+  max-width: 100%;
   display: block;
-  width: 500px;
-  height: 400px;
+  margin: 0 auto;
+}
+
+.image-button {
+  width: 200px;
+  height: 50px;
+  background-color: bisque;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+
+  opacity: 0.5;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 100px);
+}
+
+.image-button:hover {
+  opacity: 1;
+  cursor: pointer;
 }
