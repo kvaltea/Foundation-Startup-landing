@@ -10,6 +10,42 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .main-img {
+        max-width: 100%;
+        border-radius: 20px;
+        display: block;
+        margin: 50px auto;
+      }
+
+      .gallery {
+        display: flex;
+      }
+
+      .card {
+        margin: 16px;
+        box-shadow: 0px 7px 18px -8px rgba(0, 0, 0, 0.75);
+        line-height: 30px;
+        text-align: center;
+        text-transform: lowercase;
+      }
+
+      .opacity {
+        filter: opacity(50%);
+      }
+
+      .blur {
+        filter: blur(4px);
+      }
+
+      .invert {
+        filter: invert(100%);
+      }
+    </style>
   </head>
 
   <body>

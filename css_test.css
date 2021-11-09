@@ -408,4 +408,7 @@ div:nth-of-type(3) > p > em {
   -webkit-background-clip: text;
   /* картинка без повторений */
   background-repeat: no-repeat;
+  /* важное объявление, будет применено выше прошлых объявлений*/
+  background-color: blueviolet !important;
+  /* лучше играть со специфичностю добавить к классу тэг */
 }
