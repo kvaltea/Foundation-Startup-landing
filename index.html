@@ -15,14 +15,32 @@
   <body>
     <form>
       <div class="name-control">
-        <input name="lastName" type="text" value="Emerson" />
+        <label for="name-control">Last Name</label>
+        <input
+          name="lastName"
+          type="text"
+          id="name-control"
+          value="Emerson"
+          readonly
+        />
       </div>
       <div class="age-control">
-        <input type="number" name="age" value="17" />
+        <label for="age-control">Age</label>
+        <input
+          type="number"
+          name="age"
+          min="3"
+          max="10"
+          value="3"
+          id="age-control"
+          required
+        />
       </div>
       <div class="agree-control">
-        <input type="checkbox" name="agree" id="agree" />
-        <label for="agree">Accept terms and conditions</label>
+        <label>
+          <input type="checkbox" name="agree" disabled />
+          Accept terms and conditions
+        </label>
       </div>
       <div class="choose-gender">
         <input type="radio" name="gender" id="gender-male" checked />
@@ -34,6 +52,7 @@
       </div>
       <div class="description-control">
         <textarea
+          maxlength="10"
           name="description"
           placeholder="Write description..."
         ></textarea>
