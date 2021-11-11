@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+.image-container {
+  position: relative;
+}
+
 .image {
   max-width: 100%;
   display: block;
@@ -16,7 +20,7 @@
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
-
+  padding: 20px 0;
   opacity: 0.5;
   position: absolute;
   top: calc(50% - 25px);
