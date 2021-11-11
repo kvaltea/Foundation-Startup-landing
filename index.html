@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Images</title>
+    <title>Checkbox</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
@@ -13,53 +13,10 @@
   </head>
 
   <body>
-    <form>
-      <div class="name-control">
-        <label for="name-control">Last Name</label>
-        <input
-          name="lastName"
-          type="text"
-          id="name-control"
-          value="Emerson"
-          readonly
-        />
-      </div>
-      <div class="age-control">
-        <label for="age-control">Age</label>
-        <input
-          type="number"
-          name="age"
-          min="3"
-          max="10"
-          value="3"
-          id="age-control"
-          required
-        />
-      </div>
-      <div class="agree-control">
-        <label>
-          <input type="checkbox" name="agree" disabled />
-          Accept terms and conditions
-        </label>
-      </div>
-      <div class="choose-gender">
-        <input type="radio" name="gender" id="gender-male" checked />
-        <label for="gender-male">Male</label>
-        <input type="radio" name="gender" id="gender-female" />
-        <label for="gender-female">Female</label>
-        <input type="radio" name="gender" id="gender-secret" />
-        <label for="gender-secret">Secret</label>
-      </div>
-      <div class="description-control">
-        <textarea
-          maxlength="10"
-          name="description"
-          placeholder="Write description..."
-        ></textarea>
-      </div>
-      <div class="submit-control">
-        <button type="submit">Submit</button>
-      </div>
-    </form>
+    <label class="checkbox"
+      >Checkbox
+      <input type="checkbox" />
+      <span class="checkmark"></span>
+    </label>
   </body>
 </html>
