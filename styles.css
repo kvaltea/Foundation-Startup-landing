@@ -12,8 +12,9 @@ body {
 }
 
 .login-form {
+  position: relative;
   background-color: aqua;
-  margin: 100px auto;
+  margin: 120px auto;
   font-size: 16px;
   font-family: monospace;
   width: 300px;
@@ -31,6 +32,7 @@ body {
 }
 
 .form-label {
+  display: flex;
   margin-bottom: 4px;
 }
 
