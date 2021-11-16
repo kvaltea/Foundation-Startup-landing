@@ -805,3 +805,107 @@ div:nth-of-type(3) > p > em {
   </body>
 </html>
 */
+
+/* работа с таблицами
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Forms</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      table {
+        width: 500px;
+        margin: 16px;
+        border-collapse: collapse;
+        line-height: 40px;
+      }
+
+      td,
+      th {
+        border: 1px solid black;
+        padding: 4px;
+        text-align: right;
+      }
+
+      div {
+        overflow-x: auto;
+      }
+
+      thead {
+        background-color: aqua;
+      }
+
+      tfoot {
+        font-weight: 700;
+      }
+
+      caption {
+        margin-bottom: 8px;
+      }
+
+      tbody > tr:nth-child(odd) {
+        background-color: #f2f2f2;
+      }
+
+      tbody > tr:hover {
+        color: white;
+        background-color: #aaa;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <table>
+        <caption>
+          Shopping list
+        </caption>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Amount</th>
+            <th>Price</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Milk</td>
+            <td>3</td>
+            <td>$2</td>
+            <td>$6</td>
+          </tr>
+          <tr>
+            <td>Bread</td>
+            <td>4</td>
+            <td>$1</td>
+            <td>$4</td>
+          </tr>
+          <tr>
+            <td>Meat</td>
+            <td>5</td>
+            <td>$10</td>
+            <td>$50</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Total</td>
+            <td>$60</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
+*/
