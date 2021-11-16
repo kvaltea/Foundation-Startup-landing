@@ -13,7 +13,14 @@ th {
   border: 1px solid black;
   padding: 4px;
   text-align: right;
+}
+
+td {
   line-height: 31px;
+}
+
+th {
+  line-height: 30px;
 }
 
 div {
