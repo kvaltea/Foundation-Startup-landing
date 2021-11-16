@@ -13,14 +13,14 @@ th {
   border: 1px solid black;
   padding: 4px;
   text-align: right;
-  line-height: 40px;
+  line-height: 36px;
 }
 
 div {
   overflow-x: auto;
 }
 
-thead {
+th {
   background-color: aqua;
 }
 
