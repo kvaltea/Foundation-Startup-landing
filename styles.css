@@ -17,11 +17,11 @@ th {
 td,
 th {
   padding: 4px;
+  text-align: right;
 }
 
 tr {
-  line-height: 40px;
-  text-align: right;
+  height: 40px;
 }
 
 div {
