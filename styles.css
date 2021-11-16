@@ -11,17 +11,14 @@ table,
 td,
 th {
   border: 1px solid black;
-  padding: 4px;
-  text-align: right;
   border-collapse: collapse;
 }
 
-td {
-  line-height: 31px;
-}
-
+td,
 th {
-  line-height: 31px;
+  padding: 4px;
+  text-align: right;
+  line-height: 40px;
 }
 
 div {
