@@ -2,86 +2,23 @@
   box-sizing: border-box;
 }
 
-table {
-  margin: 16px;
-  border: 1px solid black;
-  border-collapse: collapse;
+.row {
+  display: flex;
 }
 
-td {
-  width: 50px;
-  height: 50px;
+.small-bird {
+  width: 64px;
+  height: 64px;
 }
 
-.color-row:nth-child(even) {
-  background-color: white;
+.large-bird {
+  width: 320px;
+  height: 320px;
 }
 
-.color-row:nth-child(odd) {
-  background-color: black;
-}
-
-.color-row-2:nth-child(even) {
-  background-color: black;
-}
-
-.color-row-2:nth-child(odd) {
-  background-color: white;
-}
-
-.color-row-3:nth-child(even) {
-  background-color: white;
-}
-
-.color-row-3:nth-child(odd) {
-  background-color: black;
-}
-
-.color-row-4:nth-child(even) {
-  background-color: black;
-}
-
-.color-row-4:nth-child(odd) {
-  background-color: white;
-}
-
-.color-row-5:nth-child(even) {
-  background-color: white;
-}
-
-.color-row-5:nth-child(odd) {
-  background-color: black;
-}
-
-.color-row-6:nth-child(even) {
-  background-color: black;
-}
-
-.color-row-6:nth-child(odd) {
-  background-color: white;
-}
-
-.color-row-7:nth-child(even) {
-  background-color: white;
-}
-
-.color-row-7:nth-child(odd) {
-  background-color: black;
-}
-
-.color-row-8:nth-child(even) {
-  background-color: black;
-}
-
-.color-row-8:nth-child(odd) {
-  background-color: white;
-}
-
-td[class^='color'] {
-  border: 1px solid black;
-}
-
-.only-background {
-  background-color: white;
-  text-align: center;
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
 }

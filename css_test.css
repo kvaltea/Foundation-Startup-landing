@@ -938,12 +938,41 @@ div:nth-of-type(3) > p > em {
         height: 50px;
       }
 
-      .color-row:nth-child(odd) {
+      .color-row:nth-child(even),
+      .color-row-3:nth-child(even),
+      .color-row-5:nth-child(even),
+      .color-row-7:nth-child(even) {
         background-color: white;
       }
 
-      .color-row:nth-child(even) {
+      .color-row:nth-child(odd),
+      .color-row-3:nth-child(odd),
+      .color-row-5:nth-child(odd),
+      .color-row-7:nth-child(odd) {
         background-color: black;
+      }
+
+      .color-row-2:nth-child(even),
+      .color-row-4:nth-child(even),
+      .color-row-6:nth-child(even),
+      .color-row-8:nth-child(even) {
+        background-color: black;
+      }
+
+      .color-row-2:nth-child(odd),
+      .color-row-4:nth-child(odd),
+      .color-row-6:nth-child(odd),
+      .color-row-8:nth-child(odd) {
+        background-color: white;
+      }
+
+      td[class^='color'] {
+        border: 1px solid black;
+      }
+
+      .only-background {
+        background-color: white;
+        text-align: center;
       }
     </style>
   </head>
@@ -951,19 +980,19 @@ div:nth-of-type(3) > p > em {
   <body>
     <table>
       <tr>
-        <td></td>
-        <td>A</td>
-        <td>B</td>
-        <td>C</td>
-        <td>D</td>
-        <td>E</td>
-        <td>F</td>
-        <td>G</td>
-        <td>H</td>
-        <td></td>
+        <td class="only-background"></td>
+        <td class="only-background">A</td>
+        <td class="only-background">B</td>
+        <td class="only-background">C</td>
+        <td class="only-background">D</td>
+        <td class="only-background">E</td>
+        <td class="only-background">F</td>
+        <td class="only-background">G</td>
+        <td class="only-background">H</td>
+        <td class="only-background"></td>
       </tr>
       <tr>
-        <td>8</td>
+        <td class="only-background">8</td>
         <td class="color-row"></td>
         <td class="color-row"></td>
         <td class="color-row"></td>
@@ -972,103 +1001,103 @@ div:nth-of-type(3) > p > em {
         <td class="color-row"></td>
         <td class="color-row"></td>
         <td class="color-row"></td>
-        <td>8</td>
+        <td class="only-background">8</td>
       </tr>
       <tr>
-        <td>7</td>
-        <td class="color-row"></td>
-        <td class="color-row"></td>
-        <td class="color-row"></td>
-        <td class="color-row"></td>
-        <td class="color-row"></td>
-        <td class="color-row"></td>
-        <td class="color-row"></td>
-        <td class="color-row"></td>
-        <td>7</td>
+        <td class="only-background">7</td>
+        <td class="color-row-2"></td>
+        <td class="color-row-2"></td>
+        <td class="color-row-2"></td>
+        <td class="color-row-2"></td>
+        <td class="color-row-2"></td>
+        <td class="color-row-2"></td>
+        <td class="color-row-2"></td>
+        <td class="color-row-2"></td>
+        <td class="only-background">7</td>
       </tr>
       <tr>
-        <td>6</td>
-        <td class="color-row"></td>
-        <td class="color-row"></td>
-        <td class="color-row"></td>
-        <td class="color-row"></td>
-        <td class="color-row"></td>
-        <td class="color-row"></td>
-        <td class="color-row"></td>
-        <td class="color-row"></td>
-        <td>6</td>
+        <td class="only-background">6</td>
+        <td class="color-row-3"></td>
+        <td class="color-row-3"></td>
+        <td class="color-row-3"></td>
+        <td class="color-row-3"></td>
+        <td class="color-row-3"></td>
+        <td class="color-row-3"></td>
+        <td class="color-row-3"></td>
+        <td class="color-row-3"></td>
+        <td class="only-background">6</td>
       </tr>
       <tr>
-        <td>5</td>
-        <td>class="color-row"</td>
-        <td class="color-row"></td>
-        <td class="color-row"></td>
-        <td class="color-row"></td>
-        <td class="color-row"></td>
-        <td class="color-row"></td>
-        <td>class="color-row"</td>
-        <td class="color-row"></td>
-        <td>5</td>
+        <td class="only-background">5</td>
+        <td class="color-row-4"></td>
+        <td class="color-row-4"></td>
+        <td class="color-row-4"></td>
+        <td class="color-row-4"></td>
+        <td class="color-row-4"></td>
+        <td class="color-row-4"></td>
+        <td class="color-row-4"></td>
+        <td class="color-row-4"></td>
+        <td class="only-background">5</td>
       </tr>
       <tr>
-        <td>4</td>
-        <td class="color-row"></td>
-        <td class="color-row"></td>
-        <td class="color-row"></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>4</td>
+        <td class="only-background">4</td>
+        <td class="color-row-5"></td>
+        <td class="color-row-5"></td>
+        <td class="color-row-5"></td>
+        <td class="color-row-5"></td>
+        <td class="color-row-5"></td>
+        <td class="color-row-5"></td>
+        <td class="color-row-5"></td>
+        <td class="color-row-5"></td>
+        <td class="only-background">4</td>
       </tr>
       <tr>
-        <td>3</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>3</td>
+        <td class="only-background">3</td>
+        <td class="color-row-6"></td>
+        <td class="color-row-6"></td>
+        <td class="color-row-6"></td>
+        <td class="color-row-6"></td>
+        <td class="color-row-6"></td>
+        <td class="color-row-6"></td>
+        <td class="color-row-6"></td>
+        <td class="color-row-6"></td>
+        <td class="only-background">3</td>
       </tr>
       <tr>
-        <td>2</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>2</td>
+        <td class="only-background">2</td>
+        <td class="color-row-7"></td>
+        <td class="color-row-7"></td>
+        <td class="color-row-7"></td>
+        <td class="color-row-7"></td>
+        <td class="color-row-7"></td>
+        <td class="color-row-7"></td>
+        <td class="color-row-7"></td>
+        <td class="color-row-7"></td>
+        <td class="only-background">2</td>
       </tr>
       <tr>
-        <td>1</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>1</td>
+        <td class="only-background">1</td>
+        <td class="color-row-8"></td>
+        <td class="color-row-8"></td>
+        <td class="color-row-8"></td>
+        <td class="color-row-8"></td>
+        <td class="color-row-8"></td>
+        <td class="color-row-8"></td>
+        <td class="color-row-8"></td>
+        <td class="color-row-8"></td>
+        <td class="only-background">1</td>
       </tr>
       <tr>
-        <td></td>
-        <td>A</td>
-        <td>B</td>
-        <td>C</td>
-        <td>D</td>
-        <td>E</td>
-        <td>F</td>
-        <td>G</td>
-        <td>H</td>
-        <td></td>
+        <td class="only-background"></td>
+        <td class="only-background">A</td>
+        <td class="only-background">B</td>
+        <td class="only-background">C</td>
+        <td class="only-background">D</td>
+        <td class="only-background">E</td>
+        <td class="only-background">F</td>
+        <td class="only-background">G</td>
+        <td class="only-background">H</td>
+        <td class="only-background"></td>
       </tr>
     </table>
   </body>
