@@ -1103,3 +1103,58 @@ div:nth-of-type(3) > p > em {
   </body>
 </html>
 */
+
+div[class^='rect'] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  background-color: coral;
+  height: 100px;
+  width: 100px;
+  opacity: 0.5;
+  /* анимация. Что анимируем и с каким временем она происходит */
+  transition: width 2s, opacity 0.5s;
+}
+
+div[class^='rect']:hover {
+  width: 100%;
+  opacity: 1;
+}
+
+/* Анимация, двигается по часовой и против */
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  position: absolute;
+  animation: move 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 300px;
+    top: 0;
+    background-color: cornflowerblue;
+  }
+  50% {
+    left: 300px;
+    top: 300px;
+    background-color: aqua;
+  }
+  75% {
+    left: 0;
+    top: 300px;
+    background-color: yellowgreen;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    background-color: coral;
+  }
+}
