@@ -9,11 +9,11 @@
   font-weight: 700;
   color: white;
   text-transform: uppercase;
-  top: calc(50% - 10px);
-  left: calc(50% - 100px);
 }
 
 .block {
+  padding-top: 45px;
+  padding-left: 25px;
   position: relative;
   width: 250px;
   height: 100px;
