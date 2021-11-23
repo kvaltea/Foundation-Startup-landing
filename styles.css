@@ -12,7 +12,6 @@
 }
 
 .spinner-text {
-  position: absolute;
   font-family: monospace;
   font-size: 16px;
   text-transform: uppercase;
@@ -38,8 +37,6 @@
   border-top: 4px solid black;
   border-radius: 50%;
   margin-bottom: 8px;
-  position: relative;
-  left: 10px;
   animation: load 2s linear infinite;
 }
 
