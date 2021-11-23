@@ -2,33 +2,17 @@
   box-sizing: border-box;
 }
 
-.text {
-  position: absolute;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  color: white;
-  text-transform: uppercase;
+p {
+  margin: 0 32px;
+  padding: 8px;
+  background-color: antiquewhite;
+  display: inline-block;
+  border-radius: 4px;
 }
 
-.block {
-  padding-top: 42px;
-  padding-left: 17px;
-  position: relative;
-  width: 250px;
+.square {
   height: 100px;
-  border-radius: 10px;
-  background-color: coral;
-  margin: 0 auto;
-  animation: topMove 2s ease;
-  animation-fill-mode: forwards;
-}
-
-@keyframes topMove {
-  0% {
-    top: -100px;
-  }
-  100% {
-    top: calc(50vh - 50px);
-  }
+  width: 100px;
+  background-color: tomato;
+  transform: translate(200px, 100px) rotate(45deg) scale(1.5);
 }

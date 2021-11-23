@@ -1240,3 +1240,8 @@ div[class^='rect']:hover {
 </html>
 
 */
+
+dd {
+  /* трансформация. 1. Смещение. 2. Пвернули на 45 градусов. 3. Увеличили */
+  transform: translate(200px, 100px) rotate(45deg) scale(1.5);
+}
