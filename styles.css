@@ -13,6 +13,7 @@
 }
 
 .spinner-text {
+  position: absolute;
   font-family: monospace;
   font-size: 16px;
   text-transform: uppercase;
@@ -24,4 +25,7 @@
   width: 10px;
   height: 4px;
   border-radius: 2px;
+  position: relative;
+  top: 16px;
   animation: moving 2s infinite, blinking 2s infinite;
+}
