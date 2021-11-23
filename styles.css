@@ -1,24 +1,45 @@
-.icon {
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 32px;
+}
+
+div[class^='rect'] {
   display: flex;
-  justify-content: space-around;
+  padding: auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  background-color: coral;
+  height: 100px;
+  width: 100px;
+  opacity: 0.5;
+  transition: width 2s, opacity 0.5s;
 }
 
-#full {
-  font-size: 16px;
+div[class^='rect']:hover {
+  width: 100%;
+  opacity: 1;
 }
 
-#three-quarters {
-  font-size: 32px;
+div[class^='linear'] {
+  transition-timing-function: linear;
 }
 
-#half {
-  font-size: 64px;
+div[class^='ease'] {
+  transition-timing-function: ease;
 }
 
-#quarter {
-  font-size: 128px;
+div[class^='ease-in'] {
+  transition-timing-function: ease-in;
 }
 
-#empty {
-  font-size: 256px;
+div[class^='ease-out'] {
+  transition-timing-function: ease-out;
+}
+
+div[class^='ease-in-out'] {
+  transition-timing-function: ease-in-out;
 }
