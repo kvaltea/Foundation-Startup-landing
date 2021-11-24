@@ -9,10 +9,13 @@
 
 .spinner {
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .spinner-text {
-  position: absolute;
   font-family: monospace;
   font-size: 16px;
   text-transform: uppercase;
@@ -32,8 +35,7 @@
 }
 
 .circle {
-  position: relative;
-  left: 5px;
+  text-align: center;
   height: 50px;
   width: 50px;
   border: 4px solid lightgray;
