@@ -16,7 +16,7 @@ body {
 
 .main {
   display: flex;
-  height: 100vh;
+  height: 100vw;
 }
 
 .header {
@@ -56,27 +56,28 @@ body {
 }
 
 .section__header {
-  font-size: 5vh;
+  font-size: 5vw;
   text-align: center;
 }
 
 .nav-list {
-  display: flex;
-  flex-direction: column;
   padding: 0;
   list-style-type: none;
 }
 
 .nav-list-item {
-  background-color: #8b0000;
-  font-size: 2em;
+  background-color: #808080;
+  height: 2em;
   margin-bottom: 0.5rem;
+  vertical-align: center;
 }
 
 .nav-list-link {
+  min-width: 100%;
   padding: 0 0.5em;
   text-decoration: none;
   color: white;
+
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
