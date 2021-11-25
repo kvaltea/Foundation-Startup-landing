@@ -1245,3 +1245,94 @@ dd {
   /* трансформация. 1. Смещение. 2. Пвернули на 45 градусов. 3. Увеличили */
   transform: translate(200px, 100px) rotate(45deg) scale(1.5);
 }
+
+@media screen and (max-width: 600px) {
+  .square {
+    background-color: #ff7f50;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* 3 блока одинаковой ширины располежены рядом друг с другом
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Queries</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
+      crossorigin="anonymous"
+    />
+    <style>
+      .navigation {
+        background-color: #ff7f50;
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+      }
+
+      .products-list {
+        background-color: #006400;
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+      }
+
+      .news {
+        background-color: #0ff;
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+      }
+
+      .text {
+        text-transform: lowercase;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 8px;
+        background-color: #faebd7;
+        border-radius: 4px;
+        margin: auto;
+      }
+
+      @media screen and (min-width: 600px) {
+        .products {
+          display: flex;
+          width: 100%;
+          flex-grow: 2;
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        .news {
+          width: 50%;
+        }
+
+        .content {
+          display: flex;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="content">
+      <section class="products">
+        <div class="navigation"><span class="text">Navigation</span></div>
+        <div class="products-list"><span class="text">Products List</span></div>
+      </section>
+      <div class="news"><span class="text">News</span></div>
+    </main>
+  </body>
+</html>
+*/
