@@ -1,6 +1,7 @@
 .navigation {
   background-color: #ff7f50;
   height: 200px;
+  width: 100%;
   display: flex;
   flex-grow: 1;
 }
@@ -8,6 +9,7 @@
 .products-list {
   background-color: #006400;
   height: 200px;
+  width: 100%;
   display: flex;
   flex-grow: 1;
 }
@@ -16,7 +18,7 @@
   background-color: #0ff;
   height: 200px;
   display: flex;
-  flex-grow: 1;
+  flex-grow: 3;
 }
 
 .text {
@@ -31,6 +33,7 @@
 @media screen and (min-width: 600px) {
   .products {
     display: flex;
+    width: 50%;
     flex-grow: 2;
   }
 }
