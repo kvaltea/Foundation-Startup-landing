@@ -17,8 +17,9 @@
 .news {
   background-color: #0ff;
   height: 200px;
+  width: 100%;
   display: flex;
-  flex-grow: 3;
+  flex-grow: 1;
 }
 
 .text {
@@ -33,13 +34,18 @@
 @media screen and (min-width: 600px) {
   .products {
     display: flex;
-    width: 50%;
+    width: 100%;
     flex-grow: 2;
   }
 }
 
 @media screen and (min-width: 900px) {
+  .news {
+    width: 50%;
+  }
+
   .content {
     display: flex;
+    width: 100%;
   }
 }
