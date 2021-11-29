@@ -3,60 +3,125 @@
 }
 
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #555;
   font-size: 16px;
 }
 
-.header {
+body {
   display: flex;
-  height: 3em;
-  padding: 0 1em;
-  background-color: #eee;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-button {
-  padding: 0;
-  border: none;
-  cursor: pointer;
+.main {
+  display: flex;
+  height: 100%;
 }
 
-i {
-  font-size: 2em;
+.header {
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(60deg, red, orange);
+}
+
+.footer {
+  width: 100%;
+  background-color: #e5e5e5;
+  padding: 0.5em;
+  text-align: center;
+  bottom: 0;
+}
+
+.navigation,
+.news {
+  padding: 0.5em;
+  width: 20%;
+}
+
+.section {
+  padding: 0.5em;
+  width: 60%;
+  font-size: 1.25em;
+}
+
+.section > .units-list {
+  line-height: 1.75em;
+}
+
+.css-units {
+  color: #8b0000;
+  background-color: #e5e5e5;
+  font-size: 1.125em;
+  font-weight: 700;
+}
+
+.section__header {
+  font-size: 5vw;
+  text-align: center;
 }
 
 .nav-list {
   padding: 0;
   list-style-type: none;
-  width: 20%;
-  padding: 0.5em;
 }
 
 .nav-list-item {
   background-color: #808080;
-  color: white;
   height: 2em;
-  margin-bottom: 0.5em;
+  line-height: 2em;
+  margin-bottom: 0.5rem;
 }
 
 .nav-list-link {
+  width: 100%;
   display: inline-block;
+  padding: 0 0.5em;
   text-decoration: none;
   color: white;
-  width: 100%;
-  padding: 0.5em;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
+img {
+  width: 100%;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
 @media screen and (max-width: 600px) {
-  .navigation {
-    display: none;
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navigation,
+  .news,
+  .section {
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 600px) {
-  button {
-    display: none;
+  .main {
+    display: block;
+  }
+
+  .box {
+    display: flex;
+  }
+
+  .section {
+    width: 80%;
+  }
+
+  .news {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main {
+    display: flex;
   }
 }
