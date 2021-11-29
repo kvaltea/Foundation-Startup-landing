@@ -43,9 +43,10 @@ body {
   padding: 0.5em;
   width: 60%;
   font-size: 1.25em;
+  height: 100%;
 }
 
-.section > .units-list {
+.units-list {
   line-height: 1.75em;
 }
 
@@ -123,5 +124,13 @@ img {
 @media screen and (min-width: 1200px) {
   .main {
     display: flex;
+  }
+
+  .box {
+    width: 80%;
+  }
+
+  .news {
+    width: 20%;
   }
 }
