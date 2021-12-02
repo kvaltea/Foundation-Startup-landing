@@ -16,9 +16,7 @@ html {
 .menu {
   display: flex;
   height: $header-height;
-  margin-left: $header-height;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 10px;
   color: $text-color;
   text-transform: uppercase;
   cursor: pointer;
