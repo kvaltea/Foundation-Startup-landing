@@ -16,7 +16,7 @@
   width: 100px;
   height: 100px;
   background-color: #ff7f50;
-  margin: 10px;
+  margin: 8px;
 
   @include for-media-up {
     background-color: #8a2be2;
@@ -28,5 +28,19 @@
 
   @include for-large-up {
     background-color: #c47;
+  }
+}
+
+.container {
+  @include for-media-up {
+    flex-direction: row;
+  }
+
+  @include for-md-to-lg {
+    flex-direction: row;
+  }
+
+  @include for-large-up {
+    flex-direction: row;
   }
 }
