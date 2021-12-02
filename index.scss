@@ -1,66 +1,53 @@
-@import 'header.scss';
+@import 'layout.scss';
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.header {
-  height: $header-height;
-  background-color: $first-color;
-}
-
-.menu {
+.navigation {
+  background-color: $color-nav;
+  height: $height-content;
+  width: 100%;
   display: flex;
-  height: $header-height;
-  margin: 0 8px;
-  color: $text-color;
-  text-transform: uppercase;
-  cursor: pointer;
+  flex-grow: 1;
+}
 
-  &__item {
-    list-style-type: none;
-    padding: 0 8px;
+.products-list {
+  background-color: $color-prod;
+  height: $height-content;
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+}
 
-    &_active {
-      color: $text-color-active;
-    }
+.news {
+  background-color: $color-news;
+  height: $height-content;
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+}
+
+.text {
+  text-transform: lowercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 8px;
+  background-color: $text-back-color;
+  border-radius: 4px;
+  margin: auto;
+}
+
+@include for-extra-small {
+  .products {
+    display: flex;
+    width: 100%;
+    flex-grow: 2;
   }
 }
 
-.menu__item:hover {
-  background-color: $hover-color;
-}
-
-.submenu {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  background-color: $second-color;
-  color: $text-color;
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
-  list-style-type: none;
-  min-width: 120px;
-  display: none;
-  z-index: 1;
-
-  &__item {
-    padding: 8px;
-    position: relative;
-
-    &:hover {
-      color: black;
-    }
+@include for-medium {
+  .news {
+    width: 50%;
   }
-}
 
-.menu__item_active:hover .submenu {
-  display: block;
-}
-
-.menu__item-text {
-  line-height: $header-height;
+  .content {
+    display: flex;
+    width: 100%;
+  }
 }
