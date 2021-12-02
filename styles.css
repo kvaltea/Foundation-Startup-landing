@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #ff7f50;
+  margin: 16px;
+}
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .square {
+    background-color: #8a2be2;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .square {
+    background-color: #a61;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .square {
+    background-color: #c47;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
