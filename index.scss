@@ -18,10 +18,6 @@
   background-color: #ff7f50;
   margin: 8px;
 
-  @include for-extra-small-l {
-    flex-direction: row;
-  }
-
   @include for-media-up {
     background-color: #8a2be2;
   }
@@ -36,6 +32,10 @@
 }
 
 .container {
+  @include for-extra-small-l {
+    flex-direction: row;
+  }
+
   @include for-media-up {
     flex-direction: row;
   }
