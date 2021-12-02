@@ -14,7 +14,7 @@ html {
 .menu {
   display: flex;
   height: 3em;
-  margin: 0 10px;
+  margin: 0 8px;
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
