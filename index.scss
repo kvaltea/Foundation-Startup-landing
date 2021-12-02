@@ -1,50 +1,68 @@
-@import 'breakpoints.scss';
+@import 'header.scss';
 
 * {
   box-sizing: border-box;
 }
 
-.container {
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  height: $header-height;
+  background-color: $first-color;
+}
+
+.menu {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+  height: $header-height;
+  margin-left: $header-height;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $text-color;
+  text-transform: uppercase;
+  cursor: pointer;
 
-.square {
-  width: 100px;
-  height: 100px;
-  background-color: #ff7f50;
-  margin: 8px;
+  &__item {
+    list-style-type: none;
+    padding: 0 8px;
 
-  @include for-media-up {
-    background-color: #8a2be2;
-  }
-
-  @include for-md-to-lg {
-    background-color: #a61;
-  }
-
-  @include for-large-up {
-    background-color: #c47;
+    &_active {
+      color: $text-color-active;
+    }
   }
 }
 
-.container {
-  @include for-extra-small-l {
-    flex-direction: row;
-  }
+.menu__item:hover {
+  background-color: $hover-color;
+}
 
-  @include for-media-up {
-    flex-direction: row;
-  }
+.submenu {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  background-color: $second-color;
+  color: $text-color;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  list-style-type: none;
+  min-width: 120px;
+  display: none;
+  z-index: 1;
 
-  @include for-md-to-lg {
-    flex-direction: row;
-  }
+  &__item {
+    padding: 8px;
+    position: relative;
 
-  @include for-large-up {
-    flex-direction: row;
+    &:hover {
+      color: black;
+    }
   }
+}
+
+.menu__item_active:hover .submenu {
+  display: block;
+}
+
+.menu__item-text {
+  line-height: $header-height;
 }
