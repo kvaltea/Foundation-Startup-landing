@@ -991,9 +991,8 @@
 }
 @media screen and (min-width: 1400px) {
   .order__title {
-    margin: 0;
-    padding-top: 33px;
     text-align: left;
+    margin-bottom: 0;
   }
 }
 .order__text {
@@ -1050,7 +1049,7 @@
 .order__terms {
   font-size: 14px;
   line-height: 22px;
-  color: #2b292d;
+  color: rgba(43, 41, 45, 0.6);
 }
 @media screen and (min-width: 1400px) {
   .order__terms {
@@ -1357,7 +1356,7 @@
   .feedback {
     padding: 0 26px 0 130px;
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -1416,7 +1415,6 @@
 @media screen and (min-width: 1400px) {
   .feedback__image {
     margin: 0;
-    margin-top: 90px;
     width: 273px;
   }
 }
