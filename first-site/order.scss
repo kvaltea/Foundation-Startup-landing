@@ -3,10 +3,24 @@
   background-color: $color-light;
 
   @include for-large-up {
+    padding: 73px 0 72px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__details {
+    max-width: 550px;
   }
 
   &__illustration {
     max-width: 200px;
+
+    @include for-large-up {
+      margin: 0;
+      max-width: 269px;
+      margin-right: 121px;
+    }
   }
 
   &__title {
@@ -25,6 +39,13 @@
     margin-top: 18px;
   }
 
+  &__form {
+    @include for-large-up {
+      display: flex;
+      margin-top: 26px;
+    }
+  }
+
   &__email {
     margin-top: 40px;
     background: #ffffff;
@@ -36,6 +57,10 @@
     font-size: 18px;
     line-height: 13px;
 
+    @include for-large-up {
+      margin-top: 0;
+    }
+
     &::placeholder {
       color: $color-dark;
     }
@@ -43,7 +68,16 @@
 
   &__button {
     margin-top: 12px;
-    width: 100%;
+
+    @include for-large-down {
+      width: 100%;
+    }
+
+    @include for-large-up {
+      margin-top: 0;
+      margin-left: 10px;
+      flex-shrink: 0;
+    }
   }
 
   &__terms {

@@ -1,0 +1,146 @@
+.inbox {
+  padding: 50px 15px;
+  background-color: $color-ping;
+
+  @include for-large-up {
+    margin-top: 103px;
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    align-items: flex-start;
+    padding: 115px 99px 101px 193px;
+  }
+
+  &__decoration {
+    @include for-large-up {
+      margin: 0;
+      margin-right: 164px;
+    }
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+
+  &__image-caption {
+    display: none;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: $text-color-light-grey;
+    opacity: 0.6;
+
+    @include for-large-up {
+      display: block;
+      padding-top: 15px;
+    }
+  }
+
+  &__container {
+    @include for-large-up {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    padding-top: 32px;
+    color: $text-color-orange;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+
+    @include for-large-up {
+      padding-top: 0;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    padding-top: 17px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.357143px;
+    color: $text-color-light-grey;
+
+    @include for-large-up {
+      padding-top: 24px;
+      width: 462px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    padding-top: 18px;
+    padding-bottom: 30px;
+    font-size: 24px;
+    line-height: 34px;
+    color: $text-color-light-grey;
+
+    @include for-large-up {
+      padding-top: 30px;
+      padding-bottom: 44px;
+      width: 461px;
+    }
+  }
+}
+
+.comment {
+  margin: 0;
+  padding: 30px 20px 28px 20px;
+  width: 290px;
+  background-color: $color-white;
+  border-bottom: 4px solid $border-line-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+
+  @include for-large-up {
+    padding: 30px 30px 30px 24px;
+    width: 519px;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 20px;
+    line-height: 28px;
+    color: $text-color-light-grey;
+  }
+
+  &__text-bold {
+    font-weight: 700;
+  }
+
+  &__box {
+    margin: 0;
+    padding-bottom: 28px;
+    display: flex;
+    align-items: center;
+
+    @include for-large-up {
+      padding-top: 26px;
+      padding-bottom: 0;
+    }
+  }
+
+  &__illustration {
+    width: 40px;
+    height: 40px;
+    margin-right: 11px;
+  }
+
+  &__commentator {
+    font-size: 16px;
+    line-height: 22px;
+    color: $text-color-light-grey;
+
+    @include for-large-up {
+      margin: 0;
+    }
+  }
+
+  &__commentator-bold {
+    font-weight: 700;
+  }
+}
