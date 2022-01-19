@@ -9,8 +9,6 @@
   }
 
   &__container {
-    height: 465px;
-
     @include for-large-up {
       flex-direction: column;
       flex: 1;
@@ -63,7 +61,6 @@
   }
 
   &__image {
-    margin-top: 40px;
     width: 290px;
 
     @include for-large-up {

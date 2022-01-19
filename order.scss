@@ -30,6 +30,11 @@
     text-align: center;
     letter-spacing: -0.25px;
     margin-top: 40px;
+
+    @include for-large-up {
+      margin: 0;
+      text-align: left;
+    }
   }
 
   &__text {
@@ -37,6 +42,10 @@
     line-height: 32px;
     margin: 0;
     margin-top: 18px;
+
+    @include for-large-up {
+      margin-top: 12px;
+    }
   }
 
   &__form {
@@ -84,6 +93,11 @@
     font-size: 14px;
     line-height: 22px;
     color: $text-color-light-grey;
+
+    @include for-large-up {
+      margin: 0;
+      margin-top: 10px;
+    }
   }
 
   &__terms-link {
