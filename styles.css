@@ -1004,6 +1004,7 @@
 @media screen and (min-width: 1400px) {
   .order__text {
     margin-top: 12px;
+    width: 555px;
   }
 }
 @media screen and (min-width: 1400px) {
